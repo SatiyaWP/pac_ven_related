@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="pac_ven_related.list">
+      <field name="name">pac_ven_related list</field>
+      <field name="model">pac_ven_related.pac_ven_related</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="pac_ven_related.action_window">
+      <field name="name">pac_ven_related window</field>
+      <field name="res_model">pac_ven_related.pac_ven_related</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="pac_ven_related.action_server">
+      <field name="name">pac_ven_related server</field>
+      <field name="model_id" ref="model_pac_ven_related_pac_ven_related"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="pac_ven_related" id="pac_ven_related.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="pac_ven_related.menu_1" parent="pac_ven_related.menu_root"/>
+    <menuitem name="Menu 2" id="pac_ven_related.menu_2" parent="pac_ven_related.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="pac_ven_related.menu_1_list" parent="pac_ven_related.menu_1"
+              action="pac_ven_related.action_window"/>
+    <menuitem name="Server to list" id="pac_ven_related" parent="pac_ven_related.menu_2"
+              action="pac_ven_related.action_server"/>
+    -->
+  </data>
+</odoo>
